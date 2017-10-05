@@ -15,7 +15,8 @@
 		CC3ACB741F8463D000805D70 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3ACB731F8463D000805D70 /* FilterViewController.swift */; };
 		CC3ACB761F8468AE00805D70 /* VehicleFileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3ACB751F8468AE00805D70 /* VehicleFileViewController.swift */; };
 		CC3ACB7D1F853B0300805D70 /* VehicleMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3ACB7C1F853B0300805D70 /* VehicleMapViewController.swift */; };
-		CC3ACB801F854BE000805D70 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CC3ACB7E1F854B9100805D70 /* GoogleMaps.bundle */; };
+		CC5A8D5A1F86A6A00014177D /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5A8D591F86A6A00014177D /* Style.swift */; };
+		CC5A8D5C1F86A83B0014177D /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5A8D5B1F86A83B0014177D /* Enum.swift */; };
 		CC88E6531F831C37008E0C32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC88E6521F831C37008E0C32 /* AppDelegate.swift */; };
 		CC88E6551F831C37008E0C32 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC88E6541F831C37008E0C32 /* HomeViewController.swift */; };
 		CC88E6581F831C37008E0C32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC88E6561F831C37008E0C32 /* Main.storyboard */; };
@@ -27,7 +28,6 @@
 		CC88E6871F83C434008E0C32 /* VehicleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC88E6861F83C434008E0C32 /* VehicleTableViewController.swift */; };
 		CCE145701F85CC2A0027A29B /* SignView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE1456F1F85CC2A0027A29B /* SignView.swift */; };
 		CCE145721F85CC3F0027A29B /* SignView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCE145711F85CC3F0027A29B /* SignView.xib */; };
-		CCF1E9F71F859465000C7FB2 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF1E9F61F859465000C7FB2 /* Style.swift */; };
 		CCF1E9FD1F85B0C7000C7FB2 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF1E9FC1F85B0C7000C7FB2 /* String.swift */; };
 /* End PBXBuildFile section */
 
@@ -63,7 +63,8 @@
 		CC3ACB731F8463D000805D70 /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
 		CC3ACB751F8468AE00805D70 /* VehicleFileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleFileViewController.swift; sourceTree = "<group>"; };
 		CC3ACB7C1F853B0300805D70 /* VehicleMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleMapViewController.swift; sourceTree = "<group>"; };
-		CC3ACB7E1F854B9100805D70 /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Pods/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		CC5A8D591F86A6A00014177D /* Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
+		CC5A8D5B1F86A83B0014177D /* Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
 		CC88E64F1F831C37008E0C32 /* koolicar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = koolicar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC88E6521F831C37008E0C32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC88E6541F831C37008E0C32 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -81,7 +82,6 @@
 		CC88E6861F83C434008E0C32 /* VehicleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleTableViewController.swift; sourceTree = "<group>"; };
 		CCE1456F1F85CC2A0027A29B /* SignView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignView.swift; sourceTree = "<group>"; };
 		CCE145711F85CC3F0027A29B /* SignView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignView.xib; sourceTree = "<group>"; };
-		CCF1E9F61F859465000C7FB2 /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Style.swift; path = "../New Group/Style.swift"; sourceTree = "<group>"; };
 		CCF1E9FC1F85B0C7000C7FB2 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -134,7 +134,6 @@
 		CC88E6461F831C37008E0C32 = {
 			isa = PBXGroup;
 			children = (
-				CC3ACB7E1F854B9100805D70 /* GoogleMaps.bundle */,
 				CC88E6511F831C37008E0C32 /* koolicar */,
 				CC88E6661F831C38008E0C32 /* koolicarTests */,
 				CC88E6711F831C38008E0C32 /* koolicarUITests */,
@@ -210,6 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				CC88E6841F83C037008E0C32 /* VehicleManager.swift */,
+				CC5A8D5B1F86A83B0014177D /* Enum.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -229,7 +229,7 @@
 		CCF40B551F86954400B8B085 /* Factory */ = {
 			isa = PBXGroup;
 			children = (
-				CCF1E9F61F859465000C7FB2 /* Style.swift */,
+				CC5A8D591F86A6A00014177D /* Style.swift */,
 			);
 			path = Factory;
 			sourceTree = "<group>";
@@ -373,7 +373,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC3ACB801F854BE000805D70 /* GoogleMaps.bundle in Resources */,
 				CCE145721F85CC3F0027A29B /* SignView.xib in Resources */,
 				CC88E65D1F831C37008E0C32 /* LaunchScreen.storyboard in Resources */,
 				CC3ACB571F83F4EA00805D70 /* VehicleTableViewCell.xib in Resources */,
@@ -565,6 +564,7 @@
 			files = (
 				CC3ACB741F8463D000805D70 /* FilterViewController.swift in Sources */,
 				CC88E6851F83C037008E0C32 /* VehicleManager.swift in Sources */,
+				CC5A8D5C1F86A83B0014177D /* Enum.swift in Sources */,
 				CCF1E9FD1F85B0C7000C7FB2 /* String.swift in Sources */,
 				CCE145701F85CC2A0027A29B /* SignView.swift in Sources */,
 				CC3ACB591F83F6C900805D70 /* VehicleTableViewCell.swift in Sources */,
@@ -572,8 +572,8 @@
 				CC88E6551F831C37008E0C32 /* HomeViewController.swift in Sources */,
 				CC88E6531F831C37008E0C32 /* AppDelegate.swift in Sources */,
 				CC3ACB761F8468AE00805D70 /* VehicleFileViewController.swift in Sources */,
-				CCF1E9F71F859465000C7FB2 /* Style.swift in Sources */,
 				CC3ACB7D1F853B0300805D70 /* VehicleMapViewController.swift in Sources */,
+				CC5A8D5A1F86A6A00014177D /* Style.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

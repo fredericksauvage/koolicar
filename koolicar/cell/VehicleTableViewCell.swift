@@ -21,7 +21,7 @@ class VehicleTableViewCell: UITableViewCell {
     @IBOutlet weak var distanceLabel: UILabel!
     @IBOutlet weak var categoryHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var categoryWidthConstraint: NSLayoutConstraint!
-
+    
     override func prepareForReuse() {
         super.prepareForReuse()
         vehicleImageView.af_cancelImageRequest()
@@ -37,13 +37,12 @@ class VehicleTableViewCell: UITableViewCell {
             + " . " + vehicle.gears_type_cd.readable.localizedLowercase
         line2Label.text = "\(vehicle.year) . \(vehicle.distance_string)"
         categoryLabel.text = vehicle.category.readable.localizedCapitalized
-
+        
         if let text = categoryLabel.text {
             categoryWidthConstraint.constant = 1.2 * text.width(withConstraintedHeight: CGFloat.greatestFiniteMagnitude, font: categoryLabel.font)
             categoryHeightConstraint.constant = 1.5 * text.height(withConstrainedWidth: CGFloat.greatestFiniteMagnitude, font: categoryLabel.font)
         }
         categoryLabel.layer.cornerRadius = categoryHeightConstraint.constant / 2
-        
         
         let vehicleLocation = CLLocation(latitude: vehicle.location.latitude, longitude: vehicle.location.longitude)
         let distanceInMeter = VehicleManager.sharedInstance.currentLocation.distance(from: vehicleLocation)

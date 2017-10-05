@@ -77,7 +77,6 @@ class HomeViewController: UIViewController {
         self.navigationController?.navigationBar.isTranslucent = true
         self.navigationController?.view.backgroundColor = UIColor.clear
         
-        
         toolbar.backgroundColor = Style.toolbarBackgroundColor()
         toolbar.tintColor = Style.toolbarBackgroundColor()
         toolbar.translatesAutoresizingMaskIntoConstraints = false
@@ -176,6 +175,7 @@ extension HomeViewController: VehicleSelectable {
     }
 }
 
+// MARK: Selectionnable
 extension HomeViewController: Selectionnable{
     func didSelection(selection: Selection) {
         self.selection = selection

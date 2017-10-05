@@ -10,7 +10,7 @@ import UIKit
 import CoreLocation
 
 class VehicleFileViewController: UIViewController {
-
+    
     @IBOutlet weak var vehicleImageView: UIImageView!
     @IBOutlet weak var modelLabel: UILabel!
     @IBOutlet weak var categoryLabel: UILabel!
@@ -35,7 +35,7 @@ class VehicleFileViewController: UIViewController {
             vehicleMapViewController.centerLocation = CLLocation(latitude: vehicle.location.latitude, longitude: vehicle.location.longitude)
         }
     }
-    var vehicleMapViewController = VehicleMapViewController()
+    private var vehicleMapViewController = VehicleMapViewController()
     
     override func viewDidLoad() {
         super.viewDidLoad()

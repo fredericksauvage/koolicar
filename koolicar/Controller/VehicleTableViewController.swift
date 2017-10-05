@@ -55,7 +55,7 @@ extension VehicleTableViewController {
         cell.preservesSuperviewLayoutMargins = false
         cell.separatorInset = .zero
         cell.layoutMargins = .zero
-
+        
         return cell
     }
     

@@ -72,7 +72,7 @@ class FilterViewController: UIViewController {
         self.selection = newSelection
     }
     
-    func initialize() {
+    private func initialize() {
         view.backgroundColor = .white
         gearAutoSwitch.onTintColor = Style.greenKoolicar()
         seat5Switch.onTintColor = Style.greenKoolicar()
@@ -96,6 +96,7 @@ class FilterViewController: UIViewController {
         }
         self.selection = newSelection
     }
+    
     @IBAction func close(_ sender: Any) {
         dismiss(animated: true)
     }

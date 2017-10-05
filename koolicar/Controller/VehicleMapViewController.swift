@@ -9,7 +9,6 @@
 import UIKit
 import MapKit
 
-
 class VehicleMapViewController: UIViewController {
     class VehiculePinAnnotation: NSObject, MKAnnotation {
         var vehicle: Vehicle
@@ -30,8 +29,8 @@ class VehicleMapViewController: UIViewController {
     }
     
     weak var delegate: VehicleSelectable?
-    var lastTapGesture : UITapGestureRecognizer?
-    var regionRadius: CLLocationDistance = 1000
+    private var lastTapGesture : UITapGestureRecognizer?
+    private var regionRadius: CLLocationDistance = 1000
     var centerLocation: CLLocation = parisLocation {
         didSet {
             let coordinateRegion = MKCoordinateRegionMakeWithDistance(centerLocation.coordinate,
@@ -39,8 +38,8 @@ class VehicleMapViewController: UIViewController {
             mapView.setRegion(coordinateRegion, animated: true)
         }
     }
-    var mapView = MKMapView()
-    var signNoResult: UIView?
+    private var mapView = MKMapView()
+    private var signNoResult: UIView?
     var vehicles: [Vehicle]? {
         didSet {
             if let vehicles = vehicles, vehicles.count > 0 {
@@ -58,7 +57,7 @@ class VehicleMapViewController: UIViewController {
                     signView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -10),
                     signView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10),
                     signView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -10)
-                ])
+                    ])
                 reloadData()
             }
         }
