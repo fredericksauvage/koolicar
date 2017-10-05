@@ -29,6 +29,8 @@ class VehicleMapViewController: UIViewController {
     }
     
     weak var delegate: VehicleSelectable?
+    
+    // lastTapGesture is used to to make difference between the first click on a map annotation and clicks on this annotation's bubble.
     private var lastTapGesture : UITapGestureRecognizer?
     private var regionRadius: CLLocationDistance = 1000
     var centerLocation: CLLocation = parisLocation {
@@ -122,6 +124,7 @@ extension VehicleMapViewController: MKMapViewDelegate {
     }
     
     @objc func annotationTapped(sender: UITapGestureRecognizer){
+        // if current gesture is equal to lastTapGesture, this click isn'tthe first one on this annotation, so we have to delegate
         if let lastTapGesture = lastTapGesture,
             lastTapGesture == sender,
             let annotationView = lastTapGesture.view as? MKPinAnnotationView,
