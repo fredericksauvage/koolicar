@@ -1,19 +1,21 @@
 # koolicar
-koolicar test
+Technical-test
 
 ##version
 1.0
 
-## IDE / Langage
+## IDE / Language
 xCode 9
 SWIFT 4
 
 ## Main Pods
+
 * Alamofire
 * AlamofireObjectMapper
 * AlamofireImage
 
 ## Pattern Design
+
 * Singleton
 * Factory
 * ~MVC
@@ -28,7 +30,7 @@ SWIFT 4
 * A vehicle list is managed by the class VehicleManager
 
 ### Issues known:
-Stroyboard warning about Filter View Controller
+Storyboard warning about "Filter View Controller"
 
 ### Left to do:
 Localization implementation
