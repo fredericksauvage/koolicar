@@ -6,9 +6,6 @@ target 'koolicar' do
   use_frameworks!
 
   # Pods for koolicar
-  pod 'GoogleMaps'
-  pod 'GooglePlaces'
-  pod 'Firebase/Core'
   pod 'Alamofire', '~> 4.5'
   pod 'AlamofireObjectMapper', '~> 5.0'
   pod 'AlamofireImage', '~> 3.3'
