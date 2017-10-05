@@ -20,7 +20,7 @@ SWIFT 4
 * Factory
 * ~MVC
 
-:wq!### Note:
+### Note:
 As the JSON file is static (even if is remote downloaded), the application is based on Paris' GPS location.
 
 ## Structure:
