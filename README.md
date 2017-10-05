@@ -13,16 +13,10 @@ SWIFT 4
 * AlamofireObjectMapper
 * AlamofireImage
 
-#Pattern Design
+## Pattern Design
 * Singleton
 * Factory
 * ~MVC
-
-### Issues known:
-Stroyboard warning about Filter View Controller
-
-### Left to do:
-Localization implementation
 
 ## Structure:
 
@@ -32,3 +26,9 @@ Localization implementation
 
 * A Vehicle object is defined by the class Vehicle
 * A vehicle list is managed by the class VehicleManager
+
+### Issues known:
+Stroyboard warning about Filter View Controller
+
+### Left to do:
+Localization implementation
